@@ -81,7 +81,7 @@ Read the snipcart document [https://docs.snipcart.com/v3](https://docs.snipcart.
 
 Default values :
 
-- version : 3.2.0
+- version : 3.3.3
 - defaultLang : "en"
 - currency : "usd"
 - openCartOnAdd : true
