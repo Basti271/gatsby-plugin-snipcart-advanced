@@ -32,6 +32,5 @@
     "build": "npm run clean && babel src --out-dir . --ignore \"**/__tests__\"",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "npm run clean && babel -w src --out-dir . --ignore \"**/__tests__\""
-    "postinstall": "cd ./node_modules/my-forked-project && npm install && npm run build"
   }
 }
