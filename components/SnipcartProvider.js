@@ -3,9 +3,9 @@
 exports.__esModule = true;
 exports.default = void 0;
 
-var React = require('react');
+var React = require("react");
 
-var _require = require('../store'),
+var _require = require("../store"),
     useStore = _require.useStore,
     SnipcartContext = _require.SnipcartContext;
 /**
@@ -28,9 +28,9 @@ var SnipcartProvider = function SnipcartProvider(props) {
 
   React.useEffect(function () {
     var listenSnipcart = function listenSnipcart() {
-      document.addEventListener('snipcart.ready', function () {
+      document.addEventListener("snipcart.ready", function () {
         dispatch({
-          type: 'setReady',
+          type: "setReady",
           payload: true
         });
         changeLanguage(defaultLang);
@@ -39,7 +39,7 @@ var SnipcartProvider = function SnipcartProvider(props) {
 
     if (window.Snipcart !== undefined) {
       dispatch({
-        type: 'setReady',
+        type: "setReady",
         payload: true
       });
       changeLanguage(defaultLang);
@@ -56,9 +56,9 @@ var SnipcartProvider = function SnipcartProvider(props) {
 };
 
 SnipcartProvider.defaultProps = {
-  version: '3.2.0',
+  version: "3.4.0",
   locales: {},
-  defaultLang: 'en'
+  defaultLang: "en"
 };
 var _default = SnipcartProvider;
 exports.default = _default;

@@ -26,7 +26,7 @@ exports.onRenderBody = function (_ref, pluginOptions) {
   }
 
   var _options = (0, _extends2.default)({}, {
-    version: "3.3.3",
+    version: "3.4.0",
     innerHTML: "",
     openCartOnAdd: true,
     useSideCart: false,
